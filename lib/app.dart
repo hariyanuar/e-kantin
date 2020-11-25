@@ -1,3 +1,4 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -33,6 +34,7 @@ class App extends StatelessWidget {
           ),
           primaryColor: Colors.white,
           scaffoldBackgroundColor: Color.fromRGBO(249, 251, 255, 1.0),
+          textTheme: GoogleFonts.poppinsTextTheme(),
         ),
       ),
     );

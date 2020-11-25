@@ -43,6 +43,9 @@ dependencies:
   # Flushbar
   flushbar: ^1.10.4
 
+  # Sticky Header
+  sticky_headers: ^0.1.8+1
+
 
   # FIREBASE PACKAGES
 
