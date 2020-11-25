@@ -15,6 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: IndexedStack(
+          index: widget.currentTabIndex,
           children: [
             HomeScreen(),
           ],
@@ -33,7 +34,9 @@ class _MainScreenState extends State<MainScreen> {
             TabItem(icon: Icon(Icons.person_outline), activeIcon: Icon(Icons.person_outline, color: Theme.of(context).buttonColor)),
           ],
           onTap: (i) {
-            widget.currentTabIndex = i;
+            setState(() {
+              widget.currentTabIndex = i;
+            });
           },
           style: TabStyle.fixedCircle,
         ),
